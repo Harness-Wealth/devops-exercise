@@ -15,6 +15,13 @@ an infrastructure as code tool (e.g. Terraform).
 The application should be reachable via an ip address and respond
 with the message "I AM ALIVE!" in the root path (already defined in the application).
 
+## Running the application
+
+The python application can be run via gunicorn
+https://flask.palletsprojects.com/en/2.0.x/deploying/wsgi-standalone/#gunicorn
+
+Dependencies are managed using pipenv https://pipenv.pypa.io/en/latest/
+
 ## Requirements
 
 * Application should run as a Docker container
