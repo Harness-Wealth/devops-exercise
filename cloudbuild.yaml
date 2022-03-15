@@ -1,0 +1,8 @@
+# gcloud build submit --config cloudbuild.yaml
+teps:
+  # Docker Build
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/${PROJECT_ID}/python-docker:tag1', '.']
+  # Docker Push
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/${PROJECT_ID}/python-docker:tag1']
