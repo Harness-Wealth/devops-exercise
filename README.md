@@ -25,6 +25,7 @@ Dependencies are managed using pipenv https://pipenv.pypa.io/en/latest/
 ## Requirements
 
 * Application should run as a Docker container
+* Application should be built as an image with installed dependencies
 * Application should be reachable via ip address
 * Use your choice of CI/CD solution or other tools to build
 * Use your choice of Free tier cloud infrastructure to run
